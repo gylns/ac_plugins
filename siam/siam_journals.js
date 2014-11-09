@@ -40,6 +40,7 @@ case 'sjmaah':		// SIAM Journal on Mathematical Analysis
     journal = 'SIMA';
     break;
 case 'sjmael':		// SIAM Journal on Matrix Analysis and Applications
+case 'sjamdu':		// SIAM Journal on Algebraic Discrete Methods
     journal = 'SIMAX';
     break;
 case 'sjnaam':		// SIAM Journal on Numerical Analysis
@@ -75,3 +76,5 @@ for (var i = 0; i < articles.length; i++)
     }
     articles[i].innerHTML = articles[i].innerHTML.replace(reg_art_url_title,'href="' + real_url + '" title="' + art_doi + '.pdf"><div class="art_title">$2, ' + page_range + '</div>');
 }
+
+//http://166.111.120.94/OpenPDF-SIAM/OpenFT.exe?FileName=/89753.pdf
