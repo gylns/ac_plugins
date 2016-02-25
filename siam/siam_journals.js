@@ -10,7 +10,7 @@ var reg_page_range = /<span class="ciationPageRange">([^<]+)<\/span>/; // the pa
 
 var journal, volume, real_url, page_range, art_doi;
 [,journal,volume,] = reg_jour_vol.exec(document.baseURI);
-switch(journal)
+switch(journal.substr(0,6))
 {
 case 'mmsubt':		// Multiscale Modeling and Simulation
     journal = 'MMS';
