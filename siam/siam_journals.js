@@ -72,8 +72,7 @@ for (var i = 0; i < articles.length; i++)
     }
     else
     {
-	var doi = art_doi.slice(2,-1);
-	if (doi[0] == '0') doi = doi.slice(1);
+	var doi = art_doi.slice(-1-5,-1);
 	real_url = real_host + '/OpenPDF-SIAM/DATA/' + doi + '.pdf';
     }
     articles[i].innerHTML = articles[i].innerHTML.replace(reg_art_url_title,'href="' + real_url + '" title="' + art_doi + '.pdf"><div class="art_title">$2, ' + page_range + '</div>');
