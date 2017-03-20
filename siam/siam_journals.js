@@ -4,7 +4,7 @@ var reg_jour_vol = /\/toc\/([^\/]+)\/([^\/]+)\//; // the journal's name and volu
 
 var reg_art_url_title = /href="([^>]+)"><div class="art_title">((?!<\/div>).+)<\/div>/; // the article's url and title
 
-var reg_art_doi = /<a href="([^\"<]+)" class="ref doi">/; // the article doi
+var reg_art_doi = /<a href="([^\"<]+)" class="ref doi"/; // the article doi
 
 var reg_page_range = /<span class="ciationPageRange">([^<]+)<\/span>/; // the page range
 
